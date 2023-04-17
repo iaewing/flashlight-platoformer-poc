@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://3vdc33ssqf14"]
+
+[ext_resource type="Texture2D" uid="uid://bdr5lab130we7" path="res://Terrain/Lighting/Torch/Torch.png" id="1_87a6y"]
+[ext_resource type="Texture2D" uid="uid://dvoe618gu474s" path="res://art/2d_lights_and_shadows_neutral_point_light.webp" id="2_7ful3"]
+
+[node name="Torch" type="Sprite2D"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_87a6y")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = ExtResource("2_7ful3")

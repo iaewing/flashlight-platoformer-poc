@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://40kdbxhb6klu"]
 
 [ext_resource type="PackedScene" uid="uid://d2a8xfbjens8a" path="res://Player/Player.tscn" id="1_4wgo3"]
-[ext_resource type="Texture2D" uid="uid://dvoe618gu474s" path="res://art/2d_lights_and_shadows_neutral_point_light.webp" id="2_y2uym"]
+[ext_resource type="PackedScene" uid="uid://bbxhxcxafpgc3" path="res://Terrain/Lighting/Torch/Flashlight.tscn" id="2_lbbk7"]
 
 [node name="Main" type="Node"]
 
@@ -11,6 +11,5 @@ color = Color(0.0980392, 0.0980392, 0.0980392, 1)
 [node name="Player" parent="." instance=ExtResource("1_4wgo3")]
 position = Vector2(400, 259)
 
-[node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(187, 210)
-texture = ExtResource("2_y2uym")
+[node name="Flashlight" parent="." instance=ExtResource("2_lbbk7")]
+position = Vector2(717, 264)
