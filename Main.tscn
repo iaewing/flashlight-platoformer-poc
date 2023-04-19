@@ -16,7 +16,7 @@ position = Vector2(341, 256)
 
 [node name="Flashlight" parent="Player" instance=ExtResource("2_lbbk7")]
 position = Vector2(67, 0)
-rotation = 1.59678
+rotation = 1.5708
 scale = Vector2(5, 5)
 
 [node name="TileMap" type="TileMap" parent="."]
