@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbxhxcxafpgc3"]
+[gd_scene load_steps=3 format=3 uid="uid://bbxhxcxafpgc3"]
 
-[ext_resource type="Texture2D" uid="uid://dvoe618gu474s" path="res://art/2d_lights_and_shadows_neutral_point_light.webp" id="1_6c6t6"]
+[ext_resource type="Script" path="res://Terrain/Lighting/Flashlight/Flashlight.cs" id="1_jby10"]
+[ext_resource type="Texture2D" uid="uid://brcjy5l73u3jt" path="res://art/flashlight-texture.png" id="1_ofcjo"]
 
 [node name="Flashlight" type="Sprite2D"]
+script = ExtResource("1_jby10")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-color = Color(1, 0.764706, 0.498039, 1)
-texture = ExtResource("1_6c6t6")
+energy = 0.6
+texture = ExtResource("1_ofcjo")
