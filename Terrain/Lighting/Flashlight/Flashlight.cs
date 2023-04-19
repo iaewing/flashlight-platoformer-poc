@@ -2,11 +2,12 @@ using Godot;
 
 public partial class Flashlight : Sprite2D
 {
+    const int FLASHLIGHT_X_OFFSET = 67;
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
         //TODO: This is a magic number of the offset between player and flashlight
-        Position = new Vector2(67, 0);
+        Position = new Vector2(FLASHLIGHT_X_OFFSET, 0);
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
