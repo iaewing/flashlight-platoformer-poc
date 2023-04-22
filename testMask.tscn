@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtl32wkmk8012"]
+
+[ext_resource type="Texture2D" uid="uid://ct160waoyxkoh" path="res://testMask.png" id="1_08lxy"]
+
+[node name="PointLight2D" type="PointLight2D"]
+blend_mode = 2
+texture = ExtResource("1_08lxy")
