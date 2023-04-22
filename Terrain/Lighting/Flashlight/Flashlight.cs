@@ -3,6 +3,8 @@ using Godot;
 public partial class Flashlight : Sprite2D
 {
     const int FLASHLIGHT_X_OFFSET = 67;
+    const int FLASHLIGHT_Y_OFFSET = 77;
+
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
@@ -18,26 +20,26 @@ public partial class Flashlight : Sprite2D
         //Sets the flashlight to the player's position
         // Position = player.GlobalPosition;
 
-        GD.Print("player: " + player);
-        GD.Print("player velocity: " + player.Velocity.X + ',' + player.Velocity.Y);
-
         //Sets the flashlight's rotation to the player's rotation
         if (player.Velocity.X > 0)
         {
             RotationDegrees = 90;
+            Position = new Vector2(FLASHLIGHT_X_OFFSET, 0);
         }
         else if (player.Velocity.X < 0)
         {
-            RotationDegrees = 180;
+            RotationDegrees = 270;
+            Position = new Vector2(-FLASHLIGHT_X_OFFSET, 0);
         }
         else if (player.Velocity.Y > 0)
         {
-            Rotation = 90;
+            RotationDegrees = 180;
+            Position = new Vector2(0, FLASHLIGHT_Y_OFFSET);
         }
         else if (player.Velocity.Y < 0)
         {
-            Rotation = 270;
+            RotationDegrees = 0;
+            Position = new Vector2(0, -FLASHLIGHT_Y_OFFSET);
         }
-        GD.Print("flashlight rotation: " + Rotation);
     }
 }
