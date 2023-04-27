@@ -20,14 +20,14 @@ public partial class Player : CharacterBody2D
     public void Start(Vector2 position)
     {
         Position = position;
-        Show();
+        // Show();
         GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
     }
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        ScreenSize = GetViewportRect().Size;
+        // ScreenSize = GetViewportRect().Size;
         // Hide();
     }
 
