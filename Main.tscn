@@ -1,19 +1,26 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgdj076bb02kt"]
+[gd_scene load_steps=6 format=3 uid="uid://bgdj076bb02kt"]
 
 [ext_resource type="PackedScene" uid="uid://d2a8xfbjens8a" path="res://Player/Player.tscn" id="1_4wgo3"]
 [ext_resource type="PackedScene" uid="uid://bbxhxcxafpgc3" path="res://Terrain/Lighting/Flashlight/Flashlight.tscn" id="2_phhgi"]
 [ext_resource type="TileSet" uid="uid://bq0tjo7rvh5pj" path="res://art/caveAndDungeonTileSet.tres" id="3_lueca"]
 [ext_resource type="PackedScene" uid="uid://3vdc33ssqf14" path="res://Terrain/Lighting/Torch/Torch.tscn" id="3_sn5a0"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://c02heckh75xfe" path="res://light_occluder_2d.tscn" id="5_x6glx"]
+=======
+[ext_resource type="PackedScene" uid="uid://bil47hpixlb62" path="res://Player/PlayerSpawnLocation.tscn" id="5_dyqq3"]
+>>>>>>> 79ca466 (WIP - Creating PlayerSpawnLocation functionality)
 
 [node name="Main" type="Node"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0.172549, 0.172549, 0.172549, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_4wgo3")]
 z_index = 1
+position = Vector2(164, 612)
 scale = Vector2(0.5, 0.5)
+Speed = 300
 
 [node name="Flashlight" parent="Player" instance=ExtResource("2_phhgi")]
 position = Vector2(67, 0)
@@ -39,5 +46,6 @@ position = Vector2(713, 252)
 position = Vector2(41.3333, 0)
 scale = Vector2(1, 1)
 
-[node name="Area2D" parent="." instance=ExtResource("5_x6glx")]
-position = Vector2(543, 111)
+[node name="PlayerSpawnLocation" parent="." instance=ExtResource("5_dyqq3")]
+position = Vector2(21, 615)
+scale = Vector2(0.5, 0.5)

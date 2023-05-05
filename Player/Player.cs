@@ -17,10 +17,10 @@ public partial class Player : CharacterBody2D
         GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
     }
 
-    public void Start(Vector2 position)
+    public void Start()
     {
-        Position = position;
-        // Show();
+        Position = GetNode<Marker2D>("StartPosition");
+        Show();
         GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
     }
 
@@ -56,7 +56,7 @@ public partial class Player : CharacterBody2D
         {
             animatedSprite2D.Stop();
         }
-    
+
         if (Velocity.X != 0)
         {
             animatedSprite2D.Animation = "walk";
