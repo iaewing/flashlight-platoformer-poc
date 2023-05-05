@@ -56,7 +56,7 @@ public partial class Player : CharacterBody2D
         {
             animatedSprite2D.Stop();
         }
-
+    
         if (Velocity.X != 0)
         {
             animatedSprite2D.Animation = "walk";
