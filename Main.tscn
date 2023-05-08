@@ -4,11 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bbxhxcxafpgc3" path="res://Terrain/Lighting/Flashlight/Flashlight.tscn" id="2_phhgi"]
 [ext_resource type="TileSet" uid="uid://bq0tjo7rvh5pj" path="res://art/caveAndDungeonTileSet.tres" id="3_lueca"]
 [ext_resource type="PackedScene" uid="uid://3vdc33ssqf14" path="res://Terrain/Lighting/Torch/Torch.tscn" id="3_sn5a0"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://c02heckh75xfe" path="res://light_occluder_2d.tscn" id="5_x6glx"]
-=======
-[ext_resource type="PackedScene" uid="uid://bil47hpixlb62" path="res://Player/PlayerSpawnLocation.tscn" id="5_dyqq3"]
->>>>>>> 79ca466 (WIP - Creating PlayerSpawnLocation functionality)
+[ext_resource type="PackedScene" uid="uid://c84kbqrpibkih" path="res://Player/PlayerSpawnLocation.tscn" id="5_dyqq3"]
 
 [node name="Main" type="Node"]
 
