@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c380sqflswr78"]
+[gd_scene load_steps=5 format=3 uid="uid://bgdj076bb02kt"]
 
 [ext_resource type="PackedScene" uid="uid://d2a8xfbjens8a" path="res://Player/Player.tscn" id="1_4wgo3"]
-[ext_resource type="PackedScene" path="res://Terrain/Lighting/Flashlight/Flashlight.tscn" id="2_phhgi"]
+[ext_resource type="PackedScene" uid="uid://bbxhxcxafpgc3" path="res://Terrain/Lighting/Flashlight/Flashlight.tscn" id="2_phhgi"]
 [ext_resource type="TileSet" uid="uid://bq0tjo7rvh5pj" path="res://art/caveAndDungeonTileSet.tres" id="3_lueca"]
 [ext_resource type="PackedScene" uid="uid://3vdc33ssqf14" path="res://Terrain/Lighting/Torch/Torch.tscn" id="3_sn5a0"]
 
@@ -12,9 +12,6 @@ color = Color(0.172549, 0.172549, 0.172549, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_4wgo3")]
 z_index = 1
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-695, -249)
 
 [node name="Flashlight" parent="Player" instance=ExtResource("2_phhgi")]
 position = Vector2(67, 0)
