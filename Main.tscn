@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://40kdbxhb6klu"]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="PackedScene" uid="uid://d2a8xfbjens8a" path="res://Player/Player.tscn" id="1_4wgo3"]
-[ext_resource type="PackedScene" uid="uid://bbxhxcxafpgc3" path="res://Terrain/Lighting/Torch/Flashlight.tscn" id="2_lbbk7"]
+[ext_resource type="PackedScene" path="res://Terrain/Lighting/Flashlight/Flashlight.tscn" id="2_lbbk7"]
 [ext_resource type="TileSet" uid="uid://bq0tjo7rvh5pj" path="res://art/caveAndDungeonTileSet.tres" id="3_lueca"]
 [ext_resource type="PackedScene" uid="uid://3vdc33ssqf14" path="res://Terrain/Lighting/Torch/Torch.tscn" id="3_sn5a0"]
 [ext_resource type="Shader" path="res://test.gdshader" id="4_vaio7"]
