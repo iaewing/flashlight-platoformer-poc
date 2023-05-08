@@ -12,15 +12,16 @@ public partial class Player : CharacterBody2D
 
     private void OnPlayerBodyEntered(PhysicsBody2D body)
     {
-        // Hide();
         EmitSignal(SignalName.Hit);
         GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
     }
 
-    public void Start(Vector2 position)
+    public void Start()
     {
-        Position = position;
-        // Show();
+        Vector2 PlayerSpawnPosition = GetNode<Marker2D>("/root/Main/PlayerSpawnLocation").Position;
+        if (PlayerSpawnPosition != null) {
+            Position = PlayerSpawnPosition;
+        }
         GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
     }
 
@@ -29,6 +30,8 @@ public partial class Player : CharacterBody2D
     {
         // ScreenSize = GetViewportRect().Size;
         // Hide();
+        GD.Print(Position);
+        Start();
     }
 
     public void GetInput()
