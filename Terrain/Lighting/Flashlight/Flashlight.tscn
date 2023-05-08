@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://rm1g3o6jr1fd"]
+[gd_scene load_steps=3 format=3 uid="uid://bbxhxcxafpgc3"]
 
 [ext_resource type="Script" path="res://Terrain/Lighting/Flashlight/Flashlight.cs" id="1_jby10"]
 [ext_resource type="Texture2D" uid="uid://brcjy5l73u3jt" path="res://art/flashlight-texture.png" id="1_ofcjo"]
@@ -7,5 +7,7 @@
 script = ExtResource("1_jby10")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(0.976471, 0.933333, 0.839216, 1)
 energy = 0.6
+shadow_enabled = true
 texture = ExtResource("1_ofcjo")

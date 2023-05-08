@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://c84kbqrpibkih"]
+
+[node name="PlayerSpawnLocation" type="Marker2D"]
