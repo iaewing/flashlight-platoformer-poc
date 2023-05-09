@@ -1,9 +1,13 @@
 - [ ] Grayscale Effect
     - Consider how this will interact with Magic Flashlight
+    - See Issue #5
 - [x] Camera Follow
 - [x] Expand map
     - [ ] Investigate "rooms" accessible through doors
     - [ ] Flesh out TileMap
+    - See Issue #6
 - [ ] Flashlight beam should be cut off by light occluders
+    - See Issue #7
 - [ ] Create Magic Flashlight
     -  This is dependant upon Grayscale Effect
+    - See Issue #8
