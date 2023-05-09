@@ -1,11 +1,11 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://dttb6kprawvm7"]
 
 [ext_resource type="PackedScene" uid="uid://d2a8xfbjens8a" path="res://Player/Player.tscn" id="1_4wgo3"]
-[ext_resource type="PackedScene" path="res://Terrain/Lighting/Flashlight/Flashlight.tscn" id="2_lbbk7"]
+[ext_resource type="PackedScene" uid="uid://bbxhxcxafpgc3" path="res://Terrain/Lighting/Flashlight/Flashlight.tscn" id="2_lbbk7"]
 [ext_resource type="TileSet" uid="uid://bq0tjo7rvh5pj" path="res://art/caveAndDungeonTileSet.tres" id="3_lueca"]
 [ext_resource type="PackedScene" uid="uid://3vdc33ssqf14" path="res://Terrain/Lighting/Torch/Torch.tscn" id="3_sn5a0"]
 [ext_resource type="Shader" path="res://test.gdshader" id="4_vaio7"]
-[ext_resource type="Script" path="res://GWTileMap.cs" id="5_7kb1r"]
+[ext_resource type="PackedScene" uid="uid://lmy144dndpvu" path="res://Player/PlayerSpawnLocation.tscn" id="6_gbbfu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pw1ge"]
 shader = ExtResource("4_vaio7")
@@ -46,6 +46,6 @@ position = Vector2(713, 252)
 position = Vector2(41.3333, 0)
 scale = Vector2(1, 1)
 
-[node name="PlayerSpawnLocation" parent="." instance=ExtResource("5_dyqq3")]
+[node name="PlayerSpawnLocation" parent="." instance=ExtResource("6_gbbfu")]
 position = Vector2(24, 616)
 scale = Vector2(0.5, 0.5)
